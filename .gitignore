@@ -3,9 +3,9 @@
 node_modules/*
 !node_modules/bootstrap
 wp-config.php
-wp-content/themes/yourtheme/compiled-css/yourthemecss.css
-wp-content/themes/yourtheme/compiled-css/yourthemecss.css.map
-wp-content/themes/yourtheme/compiled-css/html5blank.css
-wp-content/themes/yourtheme/style.css
+wp-content/themes/vox/compiled-css/voxcss.css
+wp-content/themes/vox/compiled-css/voxcss.css.map
+wp-content/themes/vox/compiled-css/html5blank.css
+wp-content/themes/vox/style.css
 wp-content/uploads
 

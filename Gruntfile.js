@@ -5,25 +5,25 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'wp-content/themes/yourtheme/compiled-css/yourtheme.css' : 'wp-content/themes/yourtheme/sass/styles.scss'
+                    'wp-content/themes/vox/compiled-css/vox.css' : 'wp-content/themes/vox/sass/styles.scss'
                 }
             }
         },
         watch: {
             css: {
-                files: 'wp-content/themes/yourtheme/sass/**/*.scss',
+                files: 'wp-content/themes/vox/sass/**/*.scss',
                 tasks: ['sass', 'cssmin'],
             }
         },
         cssmin: {
             combine: {
                 files: {
-                    'wp-content/themes/yourtheme/style.css': ['wp-content/themes/yourtheme/compiled-css/*.css']
+                    'wp-content/themes/vox/style.css': ['wp-content/themes/vox/compiled-css/*.css']
                 }
             },
             minify: {
-                src: 'wp-content/themes/yourtheme/style.css',
-                dest: 'wp-content/themes/yourtheme/style.min.css'
+                src: 'wp-content/themes/vox/style.css',
+                dest: 'wp-content/themes/vox/style.min.css'
             }
         }
     });
