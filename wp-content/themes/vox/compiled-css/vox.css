@@ -1,9 +1,11 @@
 /** colors **/
+/** font **/
 .blackpink {
   color: pink;
 }
 
 body {
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   color: #9194a1;
 }
