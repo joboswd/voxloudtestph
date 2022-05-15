@@ -158,6 +158,11 @@ footer {
   background: #252b46;
   padding-top: 40px;
 }
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 60px 0;
+  }
+}
 footer .logo-container {
   margin-bottom: 40px;
 }
