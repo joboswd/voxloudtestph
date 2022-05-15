@@ -154,6 +154,42 @@ header.header .header-nav .burger-content .social-menu ul li a .fa {
   font-size: 1.857em;
 }
 
+.home-signup {
+  background: #5368df;
+  padding: 60px 0;
+}
+.home-signup .container {
+  padding: 0 30px;
+}
+@media screen and (min-width: 992px) {
+  .home-signup .container {
+    padding: 0 auto;
+  }
+}
+.home-signup h2 {
+  color: #fff;
+  font-size: 23px;
+  margin-bottom: 37px;
+}
+.home-signup h3 {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 23px;
+}
+.home-signup input, .home-signup button {
+  border-radius: 6px;
+  border-style: none;
+  padding: 17px 0;
+}
+.home-signup input {
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+.home-signup button {
+  background: #fa5757;
+  color: #fff;
+}
+
 footer {
   background: #252b46;
   padding-top: 40px;
