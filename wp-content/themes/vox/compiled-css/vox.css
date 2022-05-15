@@ -5,9 +5,42 @@
 }
 
 body {
+  color: #9194a1;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
-  color: #9194a1;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.w-lg-fit {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .w-lg-fit {
+    width: fit-content !important;
+  }
 }
 
 header.header nav {
@@ -119,6 +152,63 @@ header.header .header-nav .burger-content .social-menu ul li a {
 }
 header.header .header-nav .burger-content .social-menu ul li a .fa {
   font-size: 1.857em;
+}
+
+footer {
+  background: #252b46;
+  padding-top: 40px;
+}
+footer .logo-container {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 992px) {
+  footer .logo-container {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+}
+footer .logo-container h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+footer .logo-container .logo {
+  width: 28px;
+  margin-right: 13px;
+}
+@media screen and (min-width: 992px) {
+  footer .social-container {
+    margin-left: auto;
+  }
+}
+footer ul {
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+@media screen and (min-width: 992px) {
+  footer ul {
+    display: inline-flex;
+  }
+}
+footer ul.social {
+  display: inline-flex;
+}
+footer ul.social li:first-of-type {
+  margin-right: 40px;
+}
+footer ul li {
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 992px) {
+  footer ul li {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+}
+footer ul li:nth-last-of-type() {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=vox.css.map */

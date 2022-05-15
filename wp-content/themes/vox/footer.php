@@ -1,12 +1,33 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
+				<div class="container d-lg-flex flex-lg-wrap">
+					<div class="logo-container d-flex align-items-center justify-content-center justify-content-lg-start w-lg-fit">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-bookmark_v2.svg" alt="Bookmark">
+						</a>
+						<h2>BOOKMARK</h2>
+					</div>
+
+					<div class="d-flex justify-content-center align-items-center w-lg-fit">
+						<?php wp_nav_menu(array('theme_location' => 'footer-menu', 'fallback_cb' => 'false')); ?>
+					</div>
+
+					<div class="social-container d-flex justify-content-center w-lg-fit">
+						<ul class="social">
+							<li>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+									<img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/icon-facebook.svg" alt="Facebook">
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+									<img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/icon-twitter.svg" alt="Twitter">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
 			</footer>
 			<!-- /footer -->

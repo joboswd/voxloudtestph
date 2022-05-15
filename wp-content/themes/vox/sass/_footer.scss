@@ -1,0 +1,64 @@
+footer {
+    background: $darkblue;
+    padding-top: 40px;
+
+    .logo-container {
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 992px) {
+            margin-bottom: 0;
+            margin-right: 60px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    
+        .logo {
+            width: 28px;
+            margin-right: 13px;
+        }
+    }
+
+    .social-container {
+        @media screen and (min-width: 992px) {
+            margin-left: auto;
+        }
+    }
+
+    ul {
+        text-align: center;
+        margin-bottom: 0!important;
+
+        @media screen and (min-width: 992px) {
+            display: inline-flex;
+        }
+
+        &.social {
+            display: inline-flex;
+
+            li {
+                &:first-of-type {
+                    margin-right: 40px;
+                }
+            }
+        }
+
+        li {
+            margin-bottom: 28px;
+            text-transform: uppercase;
+
+            @media screen and (min-width: 992px) {
+                margin-bottom: 0;
+                margin-right: 40px;
+            }
+
+            &:nth-last-of-type() {
+                margin-right: 0;
+            }
+        }
+    }
+}
