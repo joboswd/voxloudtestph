@@ -185,9 +185,20 @@ header.header .header-nav .burger-content .social-menu ul li a .fa {
   margin-bottom: 16px;
   padding-left: 20px;
 }
+@media screen and (min-width: 992px) {
+  .home-signup input {
+    margin-right: 15px;
+    width: 350px !important;
+  }
+}
 .home-signup button {
   background: #fa5757;
   color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .home-signup button {
+    padding: 17px 25px;
+  }
 }
 
 footer {
