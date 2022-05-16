@@ -1,6 +1,10 @@
 .home-hero {
     padding: 60px 0;
 
+    @media screen and (min-width: 992px) {
+        padding: 120px 0 60px;
+    }
+
     .text-container {
         h2 {
             color: $darkblue;
