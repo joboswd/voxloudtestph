@@ -268,13 +268,21 @@ header.header .header-nav .burger-content .social-menu ul li a .fa {
   padding-right: 15%;
 }
 .home-hero .lg-content img {
-  max-width: 576px;
+  max-width: 440px;
+  top: -25px;
+  left: 5%;
+}
+@media screen and (min-width: 1201px) {
+  .home-hero .lg-content img {
+    max-width: 576px;
+    top: -80px;
+  }
 }
 .home-hero .lg-content .blue-bg {
   background: #5368df;
   border-radius: 20% 0 0 20%;
   height: 352px;
-  width: 60%;
+  width: 80%;
 }
 
 .home-signup {

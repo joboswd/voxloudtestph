@@ -35,8 +35,8 @@
             </div>
         </div>
         <div class="w-50 flex-column">
-            <div class="img-container mr-auto flex-column">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/illustration-hero.svg" alt="illustration">
+            <div class="img-container mr-auto flex-column position-relative">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/illustration-hero.svg" alt="illustration" class="position-absolute">
             </div>
             <div class="blue-bg ml-auto flex-column">
 
