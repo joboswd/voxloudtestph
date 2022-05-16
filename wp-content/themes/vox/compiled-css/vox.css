@@ -1,7 +1,7 @@
 /** colors **/
 /** font **/
-.blackpink {
-  color: pink;
+html {
+  width: 100vw;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
+  width: 100vw;
 }
 
 h2 {
@@ -47,19 +48,14 @@ ul {
   }
 }
 
-header.header nav {
-  z-index: 9999;
+header.header {
+  padding: 42px 0 0 0;
   transition: ease-in-out 0.2s;
 }
-header.header nav.scrolled {
-  background: #fff;
-  -webkit-box-shadow: 0 3px 18px -5px rgba(0, 0, 0, 0.1), 0 3px 7px -5px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 3px 18px -5px rgba(0, 0, 0, 0.1), 0 3px 7px -5px rgba(0, 0, 0, 0.05);
+header.header.burger-opened {
+  background: rgba(37, 43, 70, 0.9);
 }
-header.header nav.burger-opened {
-  background: rgba(255, 255, 255, 0.7);
-}
-header.header nav #nav-lines {
+header.header #nav-lines {
   width: 32px;
   height: 28px;
   position: relative;
@@ -73,12 +69,12 @@ header.header nav #nav-lines {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-header.header nav #nav-lines span {
+header.header #nav-lines span {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
-  background: black;
+  background: #252b46;
   margin-left: auto;
   opacity: 1;
   left: 0;
@@ -90,54 +86,58 @@ header.header nav #nav-lines span {
   -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+  z-index: 9999;
 }
-header.header nav #nav-lines span:nth-child(1) {
+header.header #nav-lines span:nth-child(1) {
   top: 0px;
 }
-header.header nav #nav-lines span:nth-child(2), header.header nav #nav-lines span:nth-child(3) {
+header.header #nav-lines span:nth-child(2), header.header #nav-lines span:nth-child(3) {
   top: 10px;
 }
-header.header nav #nav-lines span:nth-child(4) {
+header.header #nav-lines span:nth-child(4) {
   top: 20px;
 }
-header.header nav #nav-lines.open span:nth-child(1) {
+header.header #nav-lines.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
-header.header nav #nav-lines.open span:nth-child(2) {
+header.header #nav-lines.open span:nth-child(2) {
+  background: #fff;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-header.header nav #nav-lines.open span:nth-child(3) {
+header.header #nav-lines.open span:nth-child(3) {
+  background: #fff;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-header.header nav #nav-lines.open span:nth-child(4) {
+header.header #nav-lines.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
-header.header .header-nav .burger-content {
-  background: rgba(255, 255, 255, 0.7);
+
+.burger-content {
+  background: rgba(37, 43, 70, 0.9);
   padding: 72px 0;
+  right: -100% !important;
   position: absolute;
-  right: -100vw;
   transition: ease-out 0.2s;
-  height: auto;
+  z-index: 999;
 }
-header.header .header-nav .burger-content.burger-opened {
-  right: 0;
+.burger-content.burger-opened {
+  right: 0 !important;
   transition: ease-in 0.1s;
 }
-header.header .header-nav .burger-content .menu-item {
+.burger-content .menu-item {
   display: block;
 }
-header.header .header-nav .burger-content .menu-item a {
+.burger-content .menu-item a {
   color: black;
   display: block;
   text-transform: uppercase;
@@ -145,16 +145,16 @@ header.header .header-nav .burger-content .menu-item a {
   font-weight: bold;
   padding: 6px 0;
 }
-header.header .header-nav .burger-content .menu-item:last-of-type a {
+.burger-content .menu-item:last-of-type a {
   padding-bottom: 0;
 }
-header.header .header-nav .burger-content .social-menu {
+.burger-content .social-menu {
   margin-top: 32px;
 }
-header.header .header-nav .burger-content .social-menu ul li a {
+.burger-content .social-menu ul li a {
   padding: 0 18px;
 }
-header.header .header-nav .burger-content .social-menu ul li a .fa {
+.burger-content .social-menu ul li a .fa {
   font-size: 1.857em;
 }
 
