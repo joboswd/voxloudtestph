@@ -197,6 +197,11 @@ header.header #nav-lines.open span:nth-child(4) {
 .home-hero {
   padding: 60px 0;
 }
+@media screen and (min-width: 992px) {
+  .home-hero {
+    padding: 180px 0 60px;
+  }
+}
 .home-hero .text-container h2 {
   color: #252b46;
   margin-bottom: 33px;
