@@ -126,6 +126,10 @@
                 max-width: 576px;
                 top: -80px;
             }
+
+            @media screen and (min-width: 1441px) {
+                left: 20%;
+            }
         }
 
         .blue-bg {
@@ -133,6 +137,10 @@
             border-radius: 20% 0 0 20%;
             height: 352px;
             width: 80%;
+
+            @media screen and (min-width: 1441px) {
+                width: 65%;
+            }
         }
     }
 }

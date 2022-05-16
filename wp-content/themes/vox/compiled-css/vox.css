@@ -278,11 +278,21 @@ header.header .header-nav .burger-content .social-menu ul li a .fa {
     top: -80px;
   }
 }
+@media screen and (min-width: 1441px) {
+  .home-hero .lg-content img {
+    left: 20%;
+  }
+}
 .home-hero .lg-content .blue-bg {
   background: #5368df;
   border-radius: 20% 0 0 20%;
   height: 352px;
   width: 80%;
+}
+@media screen and (min-width: 1441px) {
+  .home-hero .lg-content .blue-bg {
+    width: 65%;
+  }
 }
 
 .home-signup {
@@ -383,6 +393,9 @@ footer ul.social li:first-of-type {
 footer ul li {
   margin-bottom: 28px;
   text-transform: uppercase;
+}
+footer ul li a:hover {
+  color: #fa5757;
 }
 @media screen and (min-width: 992px) {
   footer ul li {

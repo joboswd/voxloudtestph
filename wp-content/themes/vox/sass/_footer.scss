@@ -55,6 +55,12 @@ footer {
             margin-bottom: 28px;
             text-transform: uppercase;
 
+            a {
+                &:hover {
+                    color: $softred;
+                }
+            }
+
             @media screen and (min-width: 992px) {
                 margin-bottom: 0;
                 margin-right: 40px;
