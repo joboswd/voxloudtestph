@@ -8,6 +8,8 @@
 
 			<?php get_template_part('loop'); ?>
 
+			<?php get_template_part('template-parts/home-hero'); ?>
+
 			<?php get_template_part('template-parts/home-signup'); ?>
 
 		</section>
