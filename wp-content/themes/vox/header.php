@@ -64,28 +64,21 @@
 				</div>
 			</header>
 			<!-- /header -->
-			<div class="burger-content vh-100 w-100 text-center">
-				<?php wp_nav_menu(array('theme_location' => 'header-menu', 'fallback_cb' => 'false')); ?>
-				<div class="social-menu flex justify-content-center w-100">
-					<ul>
-						<li>
-							<a href="<?php the_field('facebook', $postid); ?>" target="_blank">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
+			<div class="burger-content vh-100 w-100 text-center d-flex flex-wrap">
+				<div class="w-100">
+					<?php wp_nav_menu(array('theme_location' => 'header-menu', 'fallback_cb' => 'false')); ?>
+					<a href="#" class="btn w-100">LOGIN</a>
+				</div>
+				<div class="social-menu w-100 align-self-end">
+					<ul class="social">
+						<li class="d-inline">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+								<img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/icon-facebook.svg" alt="Facebook">
 							</a>
 						</li>
-						<li>
-							<a href="<?php the_field('twitter', $postid); ?>" target="_blank">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="<?php the_field('linkedin', $postid); ?>" target="_blank">
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="<?php the_field('instagram', $postid); ?>" target="_blank">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
+						<li class="d-inline">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+								<img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/icon-twitter.svg" alt="Twitter">
 							</a>
 						</li>
 					</ul>

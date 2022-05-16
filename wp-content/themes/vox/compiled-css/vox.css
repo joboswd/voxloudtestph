@@ -55,6 +55,11 @@ header.header {
 header.header.burger-opened {
   background: rgba(37, 43, 70, 0.9);
 }
+@media screen and (min-width: 992px) {
+  header.header .container {
+    max-width: 90%;
+  }
+}
 header.header #nav-lines {
   width: 32px;
   height: 28px;
@@ -134,22 +139,32 @@ header.header #nav-lines.open span:nth-child(4) {
   right: 0 !important;
   transition: ease-in 0.1s;
 }
+.burger-content .menu {
+  margin: 0 auto 24px;
+  max-width: 85%;
+}
 .burger-content .menu-item {
   display: block;
+  border-top: 1px solid #4c526c;
 }
 .burger-content .menu-item a {
-  color: black;
+  color: #fff;
   display: block;
   text-transform: uppercase;
-  font-size: 1.857em;
-  font-weight: bold;
-  padding: 6px 0;
+  padding: 20px 0;
 }
-.burger-content .menu-item:last-of-type a {
-  padding-bottom: 0;
+.burger-content .menu-item:last-of-type {
+  border-bottom: 1px solid #4c526c;
+}
+.burger-content .btn {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  max-width: 85%;
+  font-size: 18px;
 }
 .burger-content .social-menu {
-  margin-top: 32px;
+  margin: 32px 0;
 }
 .burger-content .social-menu ul li a {
   padding: 0 18px;

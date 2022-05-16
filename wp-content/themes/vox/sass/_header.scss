@@ -6,6 +6,12 @@ header.header {
                 background: rgba(37, 43, 70, 0.9);
             }
 
+            .container {
+                @media screen and (min-width: 992px) {
+                    max-width: 90%;
+                }
+            }
+
             //burger menu
             #nav-lines {
                 width: 32px;
@@ -100,27 +106,37 @@ header.header {
         transition: ease-in .1s;
     }
 
+    .menu {
+        margin: 0 auto 24px;
+        max-width: 85%;
+    }
+
     .menu-item {
         display: block;
+        border-top: 1px solid #4c526c;
 
         a {
-            color: black;
+            color: #fff;
             display: block;
             text-transform: uppercase;
-            font-size: 1.857em;
-            font-weight: bold;
-            padding: 6px 0;
+            padding: 20px 0;
         }
 
         &:last-of-type {
-            a {
-                padding-bottom: 0;
-            }
+            border-bottom: 1px solid #4c526c;
         }
     }
 
+    .btn {
+        border:2px solid #fff;
+        border-radius: 5px;
+        color: #fff;
+        max-width: 85%;
+        font-size: 18px;
+    }
+
     .social-menu {
-        margin-top: 32px;
+        margin: 32px 0;
 
         ul {
             li {
