@@ -44,10 +44,8 @@
 						<div class="ml-auto text-right">
 							<div class="header-menu__desktop d-lg-block d-none">
 								<div>
-									<?php wp_nav_menu(array('theme_location' => 'footer-menu', 'fallback_cb' => 'false')); ?>
-								</div>
-								<div>
-								<a href="#" class="btn">LOGIN</a>
+									<?php wp_nav_menu(array('theme_location' => 'header-menu', 'fallback_cb' => 'false')); ?>
+									<a href="#" class="btn">LOGIN</a>
 								</div>
 							</div>
 

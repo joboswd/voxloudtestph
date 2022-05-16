@@ -127,6 +127,27 @@ header.header #nav-lines.open span:nth-child(4) {
   left: 50%;
 }
 
+.header-menu__desktop .menu {
+  display: inline-block;
+}
+.header-menu__desktop .menu-item {
+  display: inline-block;
+  margin-right: 44px;
+}
+.header-menu__desktop .menu-item a {
+  text-transform: uppercase;
+  color: #252b46;
+}
+.header-menu__desktop .menu-item a:hover {
+  color: #fa5757;
+}
+.header-menu__desktop .btn {
+  background: #fa5757;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 38px;
+}
+
 .burger-content {
   background: rgba(37, 43, 70, 0.9);
   padding: 72px 0;
