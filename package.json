@@ -1,7 +1,7 @@
 {
-  "name": "umg-mothership",
+  "name": "xxx",
   "version": "1.0.0",
-  "description": "codebase for UMG",
+  "description": "xxx",
   "main": "index.js",
   "devDependencies": {
     "grunt": "^1.5.3",
@@ -16,14 +16,6 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/UMG-Marketing/umg-mothership.git"
-  },
   "author": "Jayson Obos",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/UMG-Marketing/umg-mothership/issues"
-  },
-  "homepage": "https://github.com/UMG-Marketing/umg-mothership#readme"
+  "license": "ISC"
 }
